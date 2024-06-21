@@ -15,4 +15,4 @@ Notes:
 1. Run the server with: bin/server
 2. Populate tables with rake sample_data
 3. Add css script and its dependencies in the <head> tag of application.html.erb.
-4. Add css navbar to application.html.erb. 
+4. Add css navbar to application.html.erb. Include the modal script to pop out a form when the "Add a new board" button is clicked.

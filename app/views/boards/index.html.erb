@@ -52,3 +52,35 @@
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="newBoardModal" tabindex="-1" aria-labelledby="newBoardModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="newBoardModalLabel">New board</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/insert_board" method="post">
+          <div class="mb-3">
+            <label for="name_box" class="form-label">
+              Name
+            </label>
+
+            <input type="text" id="name_box" name="query_name" class="form-control">
+          </div>
+
+          <div class="d-grid">
+            <button class="btn btn-success">
+              Add board
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
