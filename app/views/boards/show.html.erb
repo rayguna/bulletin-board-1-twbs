@@ -19,15 +19,84 @@
 
     </div>
 
-    <!--start tab-->
+    <!--start tab header-->
 
     <ul class="nav nav-tabs nav-fill mb-3" id="myTab" role="tablist">
+      
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active-tab-pane" type="button" role="tab" aria-controls="active-tab-pane" aria-selected="true">Active posts (<%=@active_posts.count%>)</button>
+        </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="expired-tab" data-bs-toggle="tab" data-bs-target="#expired-tab-pane" type="button" role="tab" aria-controls="expired-tab-pane" aria-selected="false">Expired posts (<%=@expired_posts.count%>)</button>
+      </li>
+    </ul>
 
-    <!--Active posts-->
+    <!--start active tab body-->
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="active-tab-pane" role="tabpanel" aria-labelledby="active-tab" tabindex="0">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h1 class="h6 my-1">Trike</h1>
 
-    <table border="1">
+                <div>
+                  Expires on Jul  5, 2024
+                </div>
+              </div>
+
+              <div class="card-body">
+                <p>$20</p>
+              </div>
+
+              <div class="card-footer">
+                Posted on Jun 21, 2024
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+ 
+    <!--start expired tab body-->
+<div class="tab-pane fade" id="expired-tab-pane" role="tabpanel" aria-labelledby="expired-tab" tabindex="0">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table class="table table-hover table-striped table-bordered">
+            <tr>
+              <th>Title</th>
+              <th>Body</th>
+              <th>Posted on</th>
+              <th>Expired on</th>
+            </tr>
+
+              <tr>
+                <td>Bike</td>
+                <td>Free</td>
+                <td>Jun 21, 2024</td>
+                <td>Jun 13, 2024</td>
+              </tr>
+              <tr>
+                <td>Big bike</td>
+                <td>For free</td>
+                <td>Jun 21, 2024</td>
+                <td>Jun  6, 2024</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--end tab-->
+
+    <!--end css-->
+    <hr>
+
+<!--start data-->
+<!--active-->
+<table border="1">
       <tr>
         <th>Title</th>
         <th>Body</th>
@@ -45,16 +114,7 @@
       <% end %>
     </table>
 
-
-
-      </li>
-
-
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="expired-tab" data-bs-toggle="tab" data-bs-target="#expired-tab-pane" type="button" role="tab" aria-controls="expired-tab-pane" aria-selected="false">Expired posts (<%=@expired_posts.count%>)</button>
-
-    <!--Expired posts-->
-
+<!--expired-->
     <table border="1">
       <tr>
         <th>Title</th>
@@ -73,43 +133,7 @@
       <% end %>
     </table>
 
-
-      </li>
-    </ul>
-
-    <div class="tab-content" id="myTabContent">
-    
-      <div class="tab-pane fade show active" id="active-tab-pane" role="tabpanel" aria-labelledby="active-tab" tabindex="0">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-        </div>
-      </div>
-
-      <div class="tab-pane fade" id="expired-tab-pane" role="tabpanel" aria-labelledby="expired-tab" tabindex="0">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="table-responsive">
-              <table class="table table-hover table-striped table-bordered">
-                <tr>
-                  <th>Title</th>
-                  <th>Body</th>
-                  <th>Posted on</th>
-                  <th>Expired on</th>
-                </tr>
-
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!--end tab-->
-
-    <!--end css-->
-    <hr>
-
-
+<!--end data>
 
 
     <!-- Modal -->
