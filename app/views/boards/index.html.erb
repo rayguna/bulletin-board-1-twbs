@@ -1,24 +1,3 @@
-<div>
-  <div>
-
-    <form action="/insert_board" method="post">
-      <div>
-        <label for="name_box">
-          Name
-        </label>
-
-        <input type="text" id="name_box" name="query_name">
-      </div>
-
-      <button>
-        Add board
-      </button>
-    </form>
-  </div>
-</div>
-
-<hr>
-
 <!-- Add css elements -->
 
     <div class="container">
@@ -61,6 +40,7 @@
         <h1 class="modal-title fs-5" id="newBoardModalLabel">New board</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      
       <div class="modal-body">
         <form action="/insert_board" method="post">
           <div class="mb-3">
