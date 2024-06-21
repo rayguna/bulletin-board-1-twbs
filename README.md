@@ -21,3 +21,8 @@ Notes:
 ```
 <input type="hidden" id="board_id_box" name="query_board_id" value=<%=params.fetch("path_id")%>>
 ```
+
+6. Needed to add css styling the to alert message using the <div class="container"> tag.
+7. Remember to commit changes often at every stage. Simply discard changes if you got lost and return to the most recent saved version.
+
+***
