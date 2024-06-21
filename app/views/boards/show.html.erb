@@ -23,7 +23,7 @@
 
     <ul class="nav nav-tabs nav-fill mb-3" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active-tab-pane" type="button" role="tab" aria-controls="active-tab-pane" aria-selected="true">Active posts (0)</button>
+        <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active-tab-pane" type="button" role="tab" aria-controls="active-tab-pane" aria-selected="true">Active posts (<%=@active_posts.count%>)</button>
 
     <!--Active posts-->
 
@@ -51,7 +51,7 @@
 
 
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="expired-tab" data-bs-toggle="tab" data-bs-target="#expired-tab-pane" type="button" role="tab" aria-controls="expired-tab-pane" aria-selected="false">Expired posts (0)</button>
+        <button class="nav-link" id="expired-tab" data-bs-toggle="tab" data-bs-target="#expired-tab-pane" type="button" role="tab" aria-controls="expired-tab-pane" aria-selected="false">Expired posts (<%=@expired_posts.count%>)</button>
 
     <!--Expired posts-->
 
